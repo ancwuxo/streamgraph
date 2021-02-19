@@ -11,7 +11,8 @@
 #' @param space space (in points) from the marker to place the label
 #' @param y vertical position
 #' @param color color of the label
-#' @param size font size#' @export
+#' @param size font size
+#' @export
 #' @param anchor how to justify the label (one of \code{start} [left],
 #'     \code{middle} [center] or \code{end} [right])
 sg_add_marker <- function(sg, x, label="", stroke_width=0.5, stroke="#7f7f7f", space=5,
