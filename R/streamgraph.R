@@ -176,6 +176,7 @@ streamgraph <- function(data,
     legend_label="",
     fill="brewer",
     label_col="black",
+    legend_col="black",
     x_scale=scale,
     sort=sort,
     order=order
