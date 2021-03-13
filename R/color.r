@@ -24,7 +24,7 @@
 #' streamgraph(dat, "genre", "n", "year") %>%
 #'   sg_colors("PuOr")
 #' }
-sg_colors <- function(sg, palette=NULL, axis_color="black", tooltip_color="black", label_color="black", legend_color="black") {
+sg_colors <- function(sg, palette=NULL, axis_color="black", tooltip_color="black", label_color="black") {
 
   if (!is.null(palette)) {
     message("Use 'sg_fill_*' for setting stream colors. This parameter will be removed in an upcoming release.")
@@ -33,7 +33,6 @@ sg_colors <- function(sg, palette=NULL, axis_color="black", tooltip_color="black
   sg$x$text <- axis_color
   sg$x$tooltip <- tooltip_color
   sg$x$label_col <- label_color
-  sg$x$legend_col <- legend_color
 
   sg
 
