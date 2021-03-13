@@ -5,7 +5,7 @@
 \title{Modify streamgraph colors}
 \usage{
 sg_colors(sg, palette = NULL, axis_color = "black",
-  tooltip_color = "black", label_color = "black", legend_color = "black")
+  tooltip_color = "black", label_color = "black")
 }
 \arguments{
 \item{sg}{streamgraph object}
@@ -18,7 +18,6 @@ sg_colors(sg, palette = NULL, axis_color = "black",
 
 \item{label_color}{color of the label text for the legend select menu (defaults to "\code{black}")}
   
-\item{legend_color}{color of the legend text for the legend select menu (defaults to "\code{black}")}
 }
 \value{
 streamgraph object
