@@ -33,7 +33,7 @@ sg_colors <- function(sg, palette=NULL, axis_color="black", tooltip_color="black
   sg$x$text <- axis_color
   sg$x$tooltip <- tooltip_color
   sg$x$label_col <- label_color
-  sg$x$legend_color <- legend_color
+  sg$x$legend_col <- legend_color
 
   sg
 
