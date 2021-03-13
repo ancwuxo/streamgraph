@@ -7,6 +7,7 @@
 #' @param axis_color color of the axis text (defaults to "\code{black}")
 #' @param tooltip_color color of the tooltip text (defaults to "\code{black}")
 #' @param label_color color of the label text for the legend select menu (defaults to "\code{black}")
+#' @param legend_color color of the legend text for the legend select menu (defaults to "\code{black}")
 #' @return streamgraph object
 #' @export
 #' @examples \dontrun{
@@ -23,7 +24,7 @@
 #' streamgraph(dat, "genre", "n", "year") %>%
 #'   sg_colors("PuOr")
 #' }
-sg_colors <- function(sg, palette=NULL, axis_color="black", tooltip_color="black", label_color="black") {
+sg_colors <- function(sg, palette=NULL, axis_color="black", tooltip_color="black", label_color="black", legend_color="black") {
 
   if (!is.null(palette)) {
     message("Use 'sg_fill_*' for setting stream colors. This parameter will be removed in an upcoming release.")
@@ -32,6 +33,7 @@ sg_colors <- function(sg, palette=NULL, axis_color="black", tooltip_color="black
   sg$x$text <- axis_color
   sg$x$tooltip <- tooltip_color
   sg$x$label_col <- label_color
+  sg$x$legend_color <- legend_color
 
   sg
 
